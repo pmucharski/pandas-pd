@@ -51,3 +51,4 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #zad.3
+grupa = df.where(df['Rok'] > 2012).groupby(['Plec']).agg({'Liczba': {'sum'}})
